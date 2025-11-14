@@ -33,7 +33,7 @@ const socialLinks = [
 
 const Footer = () => {
   return (
-    <footer className="mt-24 bg-gradient-to-br from-emerald-50 via-white to-emerald-100 border-t border-gray-200">
+    <footer className="mt-24 bg-gradient from-emerald-50 via-white to-emerald-100 border-t border-gray-200">
       <div className="px-6 md:px-16 lg:px-24 xl:px-32 py-12">
         <div className="flex flex-col md:flex-row justify-between gap-12 border-b border-gray-300/40 pb-10">
           <div className="max-w-md">
@@ -67,7 +67,7 @@ const Footer = () => {
               <div key={index} className="min-w-[140px]">
                 <h3 className="font-semibold text-lg text-gray-900 mb-4 relative">
                   {section.title}
-                  <span className="absolute left-0 bottom-0 w-8 h-[2px] bg-emerald-600 rounded-full"></span>
+                  <span className="absolute left-0 bottom-0 w-8 h-2 bg-emerald-600 rounded-full"></span>
                 </h3>
                 <ul className="text-sm space-y-2">
                   {section.links.map((link, i) => (

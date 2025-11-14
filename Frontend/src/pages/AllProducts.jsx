@@ -23,7 +23,7 @@ const AllProducts = () => {
 
   const sortedProducts = useMemo(
     () =>
-      [...filteredProducts].sort((a, b) => b.stockQuantity - a.stockQuantity),
+      [...(filteredProducts ||[])].sort((a, b) => b.stockQuantity - a.stockQuantity),
     [filteredProducts]
   );
   return (
