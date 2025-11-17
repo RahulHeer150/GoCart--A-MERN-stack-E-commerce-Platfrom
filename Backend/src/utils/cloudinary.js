@@ -51,6 +51,7 @@ export const uploadToCloudinary = (buffer, originalname) => {
   });
 };
 
+
 export const deleteFromCloudinary = async (filepath) => {
   try {
     const publicId = extractPublicId(filepath);
