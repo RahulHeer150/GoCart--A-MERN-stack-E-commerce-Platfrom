@@ -4,6 +4,7 @@ class ApiError extends Error {
     message = "Something went wrong",
     errors = [],
     stack = ""
+    
   ) {
     super(message);
     this.statusCode = statusCode;
