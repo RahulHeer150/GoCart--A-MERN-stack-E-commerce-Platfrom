@@ -8,6 +8,7 @@ import {
 import { Category } from "../models/category.model.js";
 import { Product } from "../models/product.model.js";
 
+
 export const createCategory = asyncHandler(async (req, res) => {
   const { name, path, color } = req.body;
 
